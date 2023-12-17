@@ -6,10 +6,10 @@ import Bloglist from '@/components/bloglist'
 function index() {
   return (
     <>
-    <div className='max-w-[700px]'>
+      <div className='flex flex-row justify-center'>
         <Navbar />
       </div>
-          <div className='mt-[100px]' style={{ minHeight: 'calc(100vh - 100px)' }}>
+          <div className='px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto' style={{ minHeight: 'calc(100vh - 100px)' }}>
             <Bloglist/>
             </div>
             <Footer />

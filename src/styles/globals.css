@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,8 +19,9 @@
 }
 
 body {
-  
+  font-family: 'Poppins', sans-serif;
 }
+  
 
 .animate-in {
   animation-delay: calc(var(--index) * 130ms);
@@ -99,4 +102,20 @@ body {
 
 .translate-x-full {
   transform: translateX(100%);
+}
+/* Add this CSS to style your tiles */
+.tile {
+  
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* Non-hovered tiles in the group will have reduced opacity */
+.group:hover .tile {
+  opacity: 0.5;
+}
+
+/* The tile being hovered will maintain full opacity and scale */
+.group .tile:hover {
+  transform: scale(1.05);
+  opacity: 1;
 }
