@@ -13,6 +13,7 @@ const Navbar = () => {
     const links = [
         { label: "Projects", href: "/projects" },
         { label: "About", href: "/about" },
+       
         { label: "Contact", href: "/contact" },
     ];
 
@@ -36,18 +37,18 @@ const Navbar = () => {
 
 
     return (
-        <nav className="bg-white border-b-2 border-gray-100 fixed top-0 w-full z-10">
+        <nav className="bg-white  fixed top-0 w-full max-w-[700px] mx-auto">
             <div className="container mx-auto px-4 py-4">
                 <div className="flex justify-between items-center">
                     <Link href="/">
-                        <div className="text-black hover:text-wave-accent cursor-pointer font-bold text-3xl mt-[2px]">KH</div>
+                        <div className="text-black hover:text-wave-accent cursor-pointer font-bold text-2xl mt-[2px] pl-2">KH</div>
                     </Link>
-
+                    
                     <ul className="hidden md:flex space-x-6 items-center content-center">
                         {links.map((link) => (
-                            <li key={link.href} className={isActive(link.href) ? 'bg-slate-200 rounded-xl shadow-sm' : ''}>
-                                <Link href={link.href}>
-                                    <div className={`px-6 text-black flex flex-row justify-center cursor-pointer mx-4 max-w-[28px] py-2 ${isActive(link.href) ? 'text-gray-700' : ''}`}>
+                            <li key={link.href} className={` ${isActive(link.href) ? 'bg-slate-200 rounded-xl shadow-sm' : ''}`}>
+                                <Link href={link.href} scroll={false}>
+                                    <div className={`px-6 text-gray-600 hover:text-black flex flex-row justify-center cursor-pointer mx-4 max-w-[28px] py-2 ${isActive(link.href) ? 'text-gray-900' : ''}`}>
                                         <span className="hover:underline-animation">{link.label}</span>
                                     </div>
                                 </Link>
@@ -94,7 +95,7 @@ const Navbar = () => {
                                         </Link>
                                     ))}
                                     <Link href="/">
-                                        <div onClick={() => setIsMenuOpen(false)} className="bg-orange-500 text-white text-2xl  p-2 hover:bg-gray-400  cursor-pointer text-center mt-4">
+                                        <div onClick={() => setIsMenuOpen(false)} className="bg-green-600 text-white text-2xl  p-2 hover:bg-gray-400  cursor-pointer text-center mt-4">
                                             Github
                                         </div>
                                     </Link>
