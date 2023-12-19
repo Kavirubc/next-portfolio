@@ -10,11 +10,17 @@ const Navbar = () => {
 
     const screen = typeof window !== 'undefined' && window.screen.height;
 
-    const links = [
+
+    //replace when adding new links
+    const linkq = [
         { label: "Projects", href: "/projects" },
         { label: "About", href: "/about" },
-       
+
         { label: "Contact", href: "/contact" },
+    ];
+
+    const links = [
+       
     ];
 
     useEffect(() => {
