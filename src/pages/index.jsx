@@ -19,7 +19,7 @@ function index() {
           <Hero />
           <div className='mt-4'>
             <p className='text-base text-slate-500 text-left mr-10 pb-1 '>
-              Hi, I'm Kaviru H, a IS Undergraduate who loves building cool things with code. In addition to coding, I also work on my startup kode. 
+              Hi, I am Kaviru H, a IS Undergraduate who loves building cool things with code. In addition to coding, I also work on my startup kode. 
             </p>
           </div>
           <div className=' mt-5 border-t-2'>
