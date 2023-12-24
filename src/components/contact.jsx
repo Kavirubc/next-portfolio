@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Contact() {
     return (
-        <div className='flex flex-col md:flex-row justify-evenly mt-5 py-5 group '>
+        <div className='flex flex-col md:flex-row justify-evenly  py-5 group '>
             <div className='flex flex-col'>
                 <Link href='mailto:kaviru@ko-de.org' target='_blank'>
                     <div className='tile border px-10 md:px-32 m-3 py-7 flex items-center justify-center  '>

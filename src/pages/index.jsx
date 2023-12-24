@@ -10,11 +10,10 @@ import HOC from '../components/hoc.png'
 function index() {
   return (
     <>
-      <div className='flex flex-row justify-center'>
         <Navbar />
-      </div>
+    
 
-      <div className='mt-[70px]' style={{ minHeight: 'calc(100vh - 100px)' }}>
+      <div className='' style={{ minHeight: 'calc(100vh - 100px)' }}>
         <div className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto">
           <Hero />
           <div className='mt-4'>
@@ -24,8 +23,8 @@ function index() {
           </div>
           <div className=' mt-5 border-t-2'>
             <h2 className='text-lg text-gray-600 text-left mt-4'>Latest Work</h2>
-              <div className='flex flex-col gap-y-8 mt-8'>
-            <div className=' py-2 px-2 shadow-md rounded-lg'>
+              <div className='flex flex-col gap-y-8 mt-8  group'>
+              <div className=' py-2 px-2 shadow-md rounded-lg group-hover:scale-[1] group-hover:hover:scale-105 transition duration-200 ease-in-out'>
                 <div className='flex flex-col md:flex-row content-center gap-x-5'>
                   <Image className=' m-2 rounded-2xl' src={HOC} width={80} height={80} />
                   <div className='flex flex-col mt-2 '>

@@ -119,3 +119,11 @@ body {
   transform: scale(1.05);
   opacity: 1;
 }
+
+.group:hover .group-hover:opacity-50 {
+  opacity: 0.5;
+}
+
+.group:hover .group-hover:opacity-50:hover {
+  opacity: 1;
+}
