@@ -19,7 +19,7 @@ const Blogtile = (props) => {
                     </div>
                     <div>
                     <div className="flex items-center mb-4">
-                        <img src={props.writeImg} alt="Blogger" className="rounded-full w-10 h-10" />
+                        
                         <span className="ml-2 text-sm text-gray-500">{props.writer}</span>
                     </div>
                     <div className="flex flex-wrap items-center mt-2 text-xs">

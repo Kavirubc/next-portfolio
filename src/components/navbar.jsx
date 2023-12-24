@@ -12,16 +12,14 @@ const Navbar = () => {
 
 
     //replace when adding new links
-    const linkq = [
+    const links = [
         { label: "Projects", href: "/projects" },
         { label: "About", href: "/about" },
 
         { label: "Contact", href: "/contact" },
     ];
 
-    const links = [
-       
-    ];
+    
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -54,15 +52,15 @@ const Navbar = () => {
                         {links.map((link) => (
                             <li key={link.href} className={` ${isActive(link.href) ? 'bg-slate-200 rounded-xl shadow-sm' : ''}`}>
                                 <Link href={link.href} scroll={false}>
-                                    <div className={`px-6 text-gray-600 hover:text-black flex flex-row justify-center cursor-pointer mx-4 max-w-[28px] py-2 ${isActive(link.href) ? 'text-gray-900' : ''}`}>
+                                    <div className={`px-6 text-gray-500 hover:text-black flex flex-row justify-center cursor-pointer mx-4 max-w-[28px] py-2 ${isActive(link.href) ? 'text-gray-900' : ''}`}>
                                         <span className="hover:underline-animation">{link.label}</span>
                                     </div>
                                 </Link>
                             </li>
                         ))}
                     </ul>
-                    <Link href="/">
-                        <div className=" md:bg-green-600 text-white md:px-4 md:py-2 md:hover:bg-green-700 rounded-xl cursor-pointer">Github</div>
+                    <Link target='_blank' href="https://www.ko-de.org/">
+                        <div className=" md:text-indigo-400  md:hover:text-indigo-600 rounded-xl cursor-pointer">kode</div>
                     </Link>
                     <div className="md:hidden">
                         <Popover>
@@ -75,7 +73,7 @@ const Navbar = () => {
 
 
                             <Popover.Panel
-                                className={`${isMenuOpen ? 'h-full w-full right-0' : 'hidden'} fixed bg-white/30 backdrop-blur-lg transition-opacity shadow-sm shadow-zinc-500 ease-in-out rounded-b-3xl p-4 mt-[18px] md:hidden z-10 `}
+                                className={`${isMenuOpen ? 'h-1/3 w-1/2 right-0' : 'hidden'} fixed bg-white/30 backdrop-blur-lg transition-opacity shadow-sm shadow-zinc-500 ease-in-out rounded-b-3xl p-4 mt-[18px] md:hidden z-10 `}
                             >
 
 
@@ -100,11 +98,7 @@ const Navbar = () => {
                                             </motion.div>
                                         </Link>
                                     ))}
-                                    <Link href="/">
-                                        <div onClick={() => setIsMenuOpen(false)} className="bg-green-600 text-white text-2xl  p-2 hover:bg-gray-400  cursor-pointer text-center mt-4">
-                                            Github
-                                        </div>
-                                    </Link>
+                                    
                                 </div>
 
                             </Popover.Panel>

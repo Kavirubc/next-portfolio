@@ -17,7 +17,7 @@ function Bloglist() {
               tag1={blog.tag1}
               tag2={blog.tag2}
               backImg={blog.backImg}
-              writeImg={blog.writeImg}
+              
             />
           </div>
         </Link>
