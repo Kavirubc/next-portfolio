@@ -1,3 +1,5 @@
+
+
 export const blogs =
     [
         {
@@ -5,12 +7,12 @@ export const blogs =
             "title": "Que",
             "desc": "A learning platform that is set to redefine learning.",
             "blog": "A learning platform that is set to redefine learning. The platform allows students to post questions and get their answers by professional teachers, just like stack overflow...? No, our plat form not only allows the teachers to give answers, but also to clarify those answers through a tutorial session",
-            "writer": "Alex Johnson",
+            "writer": "Shakthi Raveen, Kenura Gunarathne",
             "date": "2023-12-01",
             "tag1": "NextJS",
             "tag2": "TailwindCSS",
-            "backImg": "https://test1.ko-de.org/test.png",
-            "writeImg": "https://test1.ko-de.org/test.png"
+            "backImg": "que.png",
+           
         },
         {
             "id": 2,
@@ -22,7 +24,7 @@ export const blogs =
             "tag1": "Tech",
             "tag2": "Innovation",
             "backImg": "https://test1.ko-de.org/test.png",
-            "writeImg": "https://test1.ko-de.org/test.png"
+            
         },
         {
             "id": 3,
@@ -34,7 +36,7 @@ export const blogs =
             "tag1": "Food",
             "tag2": "Travel",
             "backImg": "https://test1.ko-de.org/test.png",
-            "writeImg": "https://test1.ko-de.org/test.png"
+            
         }
     ]
 
