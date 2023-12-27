@@ -1,0 +1,14 @@
+# docker-compose.yml
+version: '0'
+services:
+
+  nextjs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nextjs-port
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
