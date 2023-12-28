@@ -41,7 +41,7 @@ function Index() {
     return (
         <>
             <Navbar />
-            <div className='text-center text-xl text-slate-800 my-5'>Gallery</div>
+            <div className='text-center text-xl text-slate-800 my-5 md:mt-[150px] mt-[120px]'>Gallery</div>
             <div className='px-4 sm:px-6 lg:px-8 py-5 mx-auto max-w-7xl'>
                 <motion.div
                     className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'

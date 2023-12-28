@@ -9,7 +9,7 @@ const Navbar = () => {
 
     //replace when adding new links
     const links = [
-        { label: "Projects", href: "/projects" },
+        //{ label: "Projects", href: "/projects" },
         { label: "Gallery", href: "/gallery" },
         { label: "Contact", href: "/contact" },
     ];
@@ -30,8 +30,10 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-white top-0 w-full max-w-[700px] mx-auto">
-            <div className="container mx-auto px-4 py-4">
+        <>
+        <div className='flex flex-row items-center justify-center content-center'>
+                <nav className="bg-white/90 fixed top-0 md:w-[50%] w-[100%] pt-2 z-10 rounded-xl shadow-md mt-3">
+            <div className="container mx-auto px-4 py-4 ">
                 <div className="flex justify-between items-center">
                     <Link href="/">
                         <div className="text-black hover:text-wave-accent cursor-pointer font-bold text-2xl mt-[2px] pl-2">KH</div>
@@ -60,8 +62,8 @@ const Navbar = () => {
                             </Popover.Button>
 
                             <Popover.Panel
-                                className={`${isMenuOpen ? ' absolute right-0 top-[50px]  w-1/3' : 'hidden'
-                                    } bg-white/90 backdrop-blur-md shadow-lg p-4 mt-4 rounded-b-3xl z-10 transition-all duration-300 ease-out`}
+                                className={`${isMenuOpen ? ' absolute right-0   w-1/3' : 'hidden'
+                                    } bg-white/10 backdrop-blur-md shadow-lg p-4 mt-4 rounded-b-3xl z-10 transition-all duration-300 ease-out`}
                             >
                                 <motion.div
                                     initial={{ y: -100, opacity: 0 }}
@@ -91,6 +93,8 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
+            </div>
+        </>
     );
 };
 
