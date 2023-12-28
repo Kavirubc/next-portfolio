@@ -21,7 +21,7 @@ function index() {
               Hi, I am Kaviru H, a IS Undergraduate who loves building cool things with code. In addition to coding, I also work on my startup kode. 
             </p>
           </div>
-          <div className=' mt-5 border-t-2'>
+          <div className=' my-5 border-t-2'>
             <h2 className='text-lg text-gray-600 text-left mt-4'>Latest Work</h2>
 
             <div className='flex flex-col gap-y-8 mt-8  group'>
@@ -36,6 +36,7 @@ function index() {
               </div>
 
             </div>
+            
               <div className='flex flex-col gap-y-8 mt-8  group'>
               <div className=' py-2 px-2 shadow-md rounded-lg group-hover:scale-[1] group-hover:hover:scale-105 transition duration-200 ease-in-out'>
                 <div className='flex flex-col md:flex-row content-center gap-x-5'>
@@ -49,6 +50,19 @@ function index() {
               
             </div>
             
+            
+          </div>
+          <div className='group'>
+            <div className='flex flex-col gap-y-8 mt-10 border-t-2 pt-6 '>
+              <h2 className='text-lg text-gray-600 text-left mt-4'>Go-to playlists</h2>
+              <div className='group-hover:scale-[1] group-hover:hover:scale-105 transition duration-200 ease-in-out'>
+                <iframe  src="https://open.spotify.com/embed/playlist/2dFYbLO2e91eiXispfv616?utm_source=generator" width="100%" height="352"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+              <div className='group-hover:scale-[1] group-hover:hover:scale-105 transition duration-200 ease-in-out'>
+                <iframe src="https://open.spotify.com/embed/playlist/2Ed0kNor78tdG2S6mGtKHG?utm_source=generator" width="100%" height="352"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+
+            </div>
           </div>
           
           
