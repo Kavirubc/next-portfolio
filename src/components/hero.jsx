@@ -30,7 +30,7 @@ function Hero() {
                 className='flex flex-col mb-5'>
 
                 <motion.div className='mb-2' variants={itemVariants}>
-                    <h1 className='text-2xl text-zinc-900'>Kaviru <br /> Hapuarachchi</h1>
+                    <h1 className='md:text-4xl text-2xl text-zinc-900'>Kaviru <br /> Hapuarachchi</h1>
                 </motion.div>
 
                 <motion.div variants={itemVariants} className='flex md:flex-col'>
