@@ -29,14 +29,14 @@ const Navbar = () => {
     };
 
     const menuVariants = {
-        open: { y: 10, opacity: 0.9, display: 'flex', transition: { duration: 0.1 } },
+        open: { y: 15, opacity: 0.9, display: 'flex', transition: { duration: 0.01 } },
         closed: { y: '-100%', opacity: 0, transition: { duration: 0.1, when: "afterChildren" } },
     };
 
     return (
         <>
             <div className='flex flex-row items-center justify-center content-center'>
-                <nav className="bg-white/90 fixed top-0 md:w-[50%] w-[100%] pt-2 z-10 rounded-xl  mt-3">
+                <nav className="bg-white/90 fixed top-0 md:w-[50%] w-[100%] pt-2 z-10 rounded-xl shadow-sm  mt-3">
                     <div className="container mx-auto px-4 py-4 ">
                         <div className="flex justify-between items-center">
                             <Link href="/">
@@ -78,7 +78,7 @@ const Navbar = () => {
                                                     <motion.div
                                                         initial={{ y: -30, opacity: 0 }}
                                                         animate={{ y: 0, opacity: 1 }}
-                                                        transition={{ delay: 0.2 * index, duration: 0.1 }}
+                                                        transition={{ delay: 0.2 * index, duration: 0.2 }}
                                                         onClick={handleOnClick}
                                                         className={`text-black text-lg text-center hover:text-orange-500 cursor-pointer ${isActive(link.href) ? 'text-orange-500' : ''} py-4`}>
                                                         {link.label}
