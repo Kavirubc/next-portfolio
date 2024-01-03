@@ -8,13 +8,13 @@ const Footer = () => {
 
 
                     <div className=" flex flex-row  space-x-4 justify-center ">
-                        <Link href="#" ><div className="text-sm hover:text-black text-gray-400 text-center">About Me</div></Link>
-                        <Link href="#" ><div className="text-sm hover:text-black text-gray-400 text-center">Contact Me</div></Link>
-                        <Link href="#" ><div className="text-sm hover:text-black text-gray-400 text-center">Projects</div></Link>
+                        <Link href="/gallery" ><div className="text-sm hover:text-black text-gray-400 text-center">Gallery</div></Link>
+                        <Link href="/contact" ><div className="text-sm hover:text-black text-gray-400 text-center">Contact Me</div></Link>
+                        <Link target="_blank" href="https://www.ko-de.org/" ><div className="text-sm hover:text-black text-gray-400 text-center">Projects</div></Link>
                     </div>
                     <div className=" flex flex-row justify-center my-10  space-x-4">
-                        <Link href="#" ><div className="text-sm hover:text-black text-gray-400 text-center">kode</div></Link>
-                        <Link href="#" ><div className="text-sm hover:text-black text-gray-400 text-center">Github</div></Link>
+                        <Link target="_blank" href="https://www.ko-de.org/" ><div className="text-sm hover:text-black text-gray-400 text-center">kode</div></Link>
+                        <Link target="_blank" href="https://github.com/Kavirubc" ><div className="text-sm hover:text-black text-gray-400 text-center">Github</div></Link>
                     </div>
 
 
