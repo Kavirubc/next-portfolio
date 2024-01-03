@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import LOGO from '../../public/logowb.png';
+import Image from 'next/image';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,7 +42,9 @@ const Navbar = () => {
                     <div className="container mx-auto px-4 py-4 ">
                         <div className="flex justify-between items-center">
                             <Link href="/">
-                                <div className="text-black hover:text-wave-accent cursor-pointer font-bold text-2xl mt-[2px] pl-2">KH</div>
+                                <div className="text-black hover:text-wave-accent cursor-pointer font-bold text-2xl mt-[2px] pl-2">
+                                    <Image className='' height={30} src={LOGO} alt="KSRH" />
+                                </div>
                             </Link>
 
                             <ul className="hidden md:flex space-x-6 items-center content-center">
@@ -61,7 +65,7 @@ const Navbar = () => {
                                 <motion.div
                                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                                     className="text-black hover:text-wave-accent cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35" fill="currentColor" className="bi bi-list " viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30"  fill="currentColor" className="bi bi-list mb-1" viewBox="0 0 16 16">
                                         <path fillRule="evenodd" d="M2.5 3.5A.5.5 0 0 1 3 3h10a.5.5 0 0 1 .5.5v.5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5v-.5zM2.5 7.5A.5.5 0 0 1 3 7h10a.5.5 0 0 1 .5.5v.5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5v-.5zM2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 .5.5v.5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5v-.5z" />
                                     </svg>
                                 </motion.div>
