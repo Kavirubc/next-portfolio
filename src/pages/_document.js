@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import Link from 'next/link'
+
 
 export default function Document() {
   return (
@@ -14,12 +14,7 @@ export default function Document() {
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
-        <Link
-          rel="icon"
-          href="/icon?<generated>"
-          type="image/<generated>"
-          sizes="<generated>"
-        />
+        <link rel="icon" href="/logo.png" sizes="any" />
       </Head>
       <body className=''>
         <Main />
