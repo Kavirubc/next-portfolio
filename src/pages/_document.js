@@ -14,7 +14,7 @@ export default function Document() {
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
-        <link rel="icon" href="/logo.png" sizes="any" />
+        <link rel="icon" href="/logown.png" sizes="any" />
       </Head>
       <body className=''>
         <Main />
