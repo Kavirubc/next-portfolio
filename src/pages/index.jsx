@@ -28,6 +28,9 @@ function Index() {
 
   return (
     <>
+      <head>
+        <title>Kaviru Hapuarachchi</title>
+      </head>
       <Navbar />
 
       <div className=' md:mt-[70px] mt-[70px]' style={{ minHeight: 'calc(100vh - 100px)' }}>

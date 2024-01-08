@@ -40,6 +40,9 @@ function Index() {
 
     return (
         <>
+            <head>
+                <title>KH | Gallery</title>
+            </head>
             <Navbar />
             <div className='text-center text-xl text-slate-800 my-5 md:mt-[150px] mt-[120px]'>Gallery</div>
             <div className='px-4 sm:px-6 lg:px-8 py-5 mx-auto max-w-7xl'>

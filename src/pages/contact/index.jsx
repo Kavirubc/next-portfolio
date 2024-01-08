@@ -6,6 +6,9 @@ import React from 'react'
 function index() {
     return (
         <>
+        <head>
+                <title>KH | Contact</title>
+        </head>
             <div className='flex flex-row justify-center'>
                 <Navbar />
             </div>
