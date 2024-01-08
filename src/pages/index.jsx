@@ -7,6 +7,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import HOC from '../components/hoc.png';
 import medium from '../../public/mico.png';
+import Head from 'next/head';
 
 function Index() {
   const containerVariants = {
@@ -28,9 +29,9 @@ function Index() {
 
   return (
     <>
-      <head>
+      <Head>
         <title>Kaviru Hapuarachchi</title>
-      </head>
+      </Head>
       <Navbar />
 
       <div className=' md:mt-[70px] mt-[70px]' style={{ minHeight: 'calc(100vh - 100px)' }}>

@@ -2,13 +2,14 @@ import Contact from '@/components/contact'
 import Footer from '@/components/footer'
 import Navbar from '@/components/navbar'
 import React from 'react'
+import Head from 'next/head'
 
 function index() {
     return (
         <>
-        <head>
+        <Head>
                 <title>KH | Contact</title>
-        </head>
+        </Head>
             <div className='flex flex-row justify-center'>
                 <Navbar />
             </div>
