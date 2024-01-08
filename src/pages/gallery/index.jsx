@@ -15,6 +15,7 @@ import img10 from './img10.jpg';
 import img11 from './img11.jpeg';
 import img12 from './img12.jpg';
 import Image from 'next/image';
+import Head from 'next/head';
 
 function Index() {
     const images = [img4, img5, img6, img7, img8, img9, img1, img2, img3, img10, img11, img12];
@@ -40,6 +41,9 @@ function Index() {
 
     return (
         <>
+            <Head>
+                <title>KH | Gallery</title>
+            </Head>
             <Navbar />
             <div className='text-center text-xl text-slate-800 my-5 md:mt-[150px] mt-[120px]'>Gallery</div>
             <div className='px-4 sm:px-6 lg:px-8 py-5 mx-auto max-w-7xl'>
