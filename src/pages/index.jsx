@@ -46,6 +46,19 @@ function Index() {
           <motion.div variants={itemVariants} className='my-5 border-t-2 group'>
             <h2 className='text-lg text-gray-600 text-left mt-4'>Latest Work</h2>
 
+
+            <motion.div className='flex flex-col gap-y-8 mt-8 shadow-md rounded-lg group-hover:scale-[1] group-hover:hover:scale-105 transition duration-200 ease-in-out shadow-blue-300 '>
+              <motion.div className='py-2 px-2' variants={itemVariants}>
+                <div className='flex flex-col md:flex-row content-center gap-x-5'>
+                  <Image className='m-2 rounded-2xl' src={medium} width={80} height={80} />
+                  <div className='flex flex-col mt-2'>
+                    <h2 className='text-base text-slate-600'>Blog - Attention <span className='ml-2 text-purple-800'><Link target='_black' href='https://medium.com/@kaviru/attention-206c60afd70d'>View</Link></span></h2>
+                    <p className='text-sm text-slate-500'>A few months ago, I read the book Hyperfocus by Chris Bailey. This was my second non-fiction read. After I wrote the first blog, I thought ...</p>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+
             <motion.div className='flex flex-col gap-y-8 mt-8 shadow-md rounded-lg group-hover:scale-[1] group-hover:hover:scale-105 transition duration-200 ease-in-out '>
               <motion.div className='py-2 px-2' variants={itemVariants}>
                 <div className='flex flex-col md:flex-row content-center gap-x-5'>
