@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "@splinetool/react-spline": "^2.2.6",
     "framer-motion": "^10.16.16",
     "next": "14.0.4",
     "popover": "^2.4.1",

@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import HOC from '../components/hoc.png';
 import medium from '../../public/mico.png';
 import Head from 'next/head';
+import Spline from '@splinetool/react-spline';
 
 function Index() {
   const containerVariants = {
@@ -30,18 +31,28 @@ function Index() {
   return (
     <>
       <Head>
+
         <title>Kaviru Hapuarachchi</title>
       </Head>
       <Navbar />
+      
 
       <div className=' md:mt-[70px] mt-[70px]' style={{ minHeight: 'calc(100vh - 100px)' }}>
+        
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
           className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto">
+          <div className="relative">
+            {/* Spline Background */}
+            <div className="absolute inset-0 z-[0]">
+              <Spline scene="https://prod.spline.design/PPfAr95LLNkXT86k/scene.splinecode" />
+            </div>
 
-          <Hero />
+            {/* Hero Component Overlay */}
+            <Hero />
+          </div>
 
           <motion.div variants={itemVariants} className='my-5 border-t-2 group'>
             <h2 className='text-lg text-gray-600 text-left mt-4'>Latest Work</h2>
@@ -94,6 +105,7 @@ function Index() {
               <div className='group-hover:scale-[1] group-hover:hover:scale-105 transition duration-200 ease-in-out'>
                 <iframe src="https://open.spotify.com/embed/playlist/2Ed0kNor78tdG2S6mGtKHG?utm_source=generator" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               </div>
+      
             </div>
           </motion.div>
 
