@@ -46,9 +46,9 @@ function Index() {
           className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto">
           <div className="relative">
             {/* Spline Background */}
-            <div className="absolute inset-0 z-[0]">
+            {/* <div className="absolute inset-0 z-[0]">
               <Spline scene="https://prod.spline.design/PPfAr95LLNkXT86k/scene.splinecode" />
-            </div>
+            </div> */}
 
             {/* Hero Component Overlay */}
             <Hero />
