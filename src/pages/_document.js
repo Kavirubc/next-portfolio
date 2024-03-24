@@ -1,6 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
 
+
 export default function Document() {
   return (
     <Html lang="en">
@@ -17,6 +18,7 @@ export default function Document() {
         <link rel="icon" href="/logown.png" sizes="any" />
       </Head>
       <body className=''>
+        
         <Main />
         <NextScript />
       </body>
