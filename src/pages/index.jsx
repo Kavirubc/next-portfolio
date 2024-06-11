@@ -87,7 +87,7 @@ function Index() {
                 <div className='flex flex-col md:flex-row content-center gap-x-5'>
                   <Image className='m-2 rounded-2xl' src={HOC} width={80} height={80} />
                   <div className='flex flex-col mt-2'>
-                    <h2 className='text-base text-slate-600'>ACM - Hour of Code <span className='ml-2 text-purple-800'><Link target='_black' href='https://acm.ko-de.org/'>Visit the page</Link></span></h2>
+                    <h2 className='text-base text-slate-600'>ACM - Hour of Code <span className='ml-2 text-purple-800'><Link target='_black' href='https://acm.ko-de.org/'>Visit</Link></span></h2>
                     <p className='text-sm text-slate-500'>This year, we are taking Hour of Code to new heights by offering coding opportunities that encompass both artificial intelligence AI and non-AI components.</p>
                   </div>
                 </div>
