@@ -7,6 +7,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import HOC from '../components/hoc.png';
 import medium from '../../public/mico.png';
+import log from '../../public/log.png'
 import Head from 'next/head';
 // import Spline from '@splinetool/react-spline'; // Uncomment if Spline is used
 
@@ -48,19 +49,25 @@ function Index() {
               <h2 className='text-lg text-gray-600 dark:text-gray-300 text-left mt-4'>Latest Work</h2>
 
               {[{
-                title: "Blog - Attention",
-                link: "https://medium.com/@kaviru/attention-206c60afd70d",
+                title: "The Daily Grind",
+                link: "https://thedailygrind.club",
                 description: "A few months ago, I read the book Hyperfocus by Chris Bailey. This was my second non-fiction read. After I wrote the first blog, I thought ...",
-                imageSrc: medium,
+                imageSrc: log,
               }, {
-                title: "Blog - Last week of December",
-                link: "https://medium.com/@kaviru/last-week-of-december-9d21198c96cd",
+                title: "Blogs and newsletters",
+                link: "https://www.blog.thedailygrind.club/",
                 description: "So precisely about a year ago, I took one of my life’s life-changing decisions. At the time, I was an engineering undergraduate at ECU who was thinking about ...",
                 imageSrc: medium,
-              }, {
-                title: "ACM - Hour of Code",
-                link: "https://acm.ko-de.org/",
-                description: "This year, we are taking Hour of Code to new heights by offering coding opportunities that encompass both artificial intelligence AI and non-AI components.",
+                }, 
+                //   title: "Blogs and newsletters",
+                //   link: "https://www.blog.thedailygrind.club/",
+                //   description: "So precisely about a year ago, I took one of my life’s life-changing decisions. At the time, I was an engineering undergraduate at ECU who was thinking about ...",
+                //   imageSrc: medium,
+                // },
+              {
+                title: "NOI.lk",
+                link: "https://noi.lk",
+                description: "As the Web lead for NOI 2024, I created the official website for the National Olympiad in Informatics 2024",
                 imageSrc: HOC,
               }].map((work, index) => (
                 <motion.div key={index} className='flex flex-col gap-y-8 mt-8 shadow-md rounded-lg group-hover:scale-[1] group-hover:hover:scale-105 transition duration-200 ease-in-out shadow-blue-300 dark:shadow-blue-900 bg-white dark:bg-gray-800'>
@@ -80,7 +87,7 @@ function Index() {
 
             </motion.div>
 
-            <motion.div variants={itemVariants} className='group'>
+            {/* <motion.div variants={itemVariants} className='group'>
               <div className='flex flex-col gap-y-8 mt-10 border-t-2 border-gray-200 dark:border-gray-700 pt-6'>
                 <h2 className='text-lg text-gray-600 dark:text-gray-300 text-left mt-4'>Go-to playlists</h2>
 
@@ -92,7 +99,8 @@ function Index() {
                   ))}
 
               </div>
-            </motion.div>
+            </motion.div> */}
+
 
           </motion.div>
         </div>
