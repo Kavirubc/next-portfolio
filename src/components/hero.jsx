@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import proPic from './a.jpeg';
 import { motion } from "framer-motion";
-//import lucid icons
 import { Boxes, BriefcaseBusiness, Laugh } from 'lucide-react';
 
 function Hero() {
@@ -29,14 +28,14 @@ function Hero() {
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className='flex flex-col mb-5'>
+                className='flex flex-col mb-6'>
 
-                <motion.div className='mb-2' variants={itemVariants}>
-                    <h1 className='md:text-4xl text-2xl text-zinc-900'>Kaviru <br /> Hapuarachchi</h1>
+                <motion.div className='mb-4' variants={itemVariants}>
+                    <h1 className='md:text-4xl text-2xl text-zinc-900 dark:text-zinc-100'>Kaviru <br /> Hapuarachchi</h1>
                 </motion.div>
 
                 <motion.div variants={itemVariants} className='flex md:flex-col'>
-                    <p className='text-base text-slate-500'>Undergraduate at University of Colombo School of computing</p>
+                    <p className='text-base text-slate-500 dark:text-slate-400'>Violinist | BSc. in IS UCSC | Vice Chair of IEEE CS Chapter UCSC</p>
                 </motion.div>
 
             </motion.div>
@@ -45,24 +44,27 @@ function Hero() {
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className='flex flex-col '>
+                className='flex flex-col'>
 
-                <motion.div variants={itemVariants} className='flex mr-5 rounded-full '>
-
-                    <Image className='rounded-full h-[100]' src={proPic} width={120} height={120} />
-
-
+                <motion.div variants={itemVariants} className='flex mb-5 rounded-full'>
+                    <Image className='rounded-full' src={proPic} width={120} height={120} alt="Profile Picture" />
                 </motion.div>
-                <motion.div variants={itemVariants} className='mr-10 flex flex-col gap-y-1 justify-between mx-2 my-5'>
-                    <p className='flex flex-row text-base text-slate-500 items-center'><span className='mr-2 text-sm'><BriefcaseBusiness /></span>Founder - kode</p>
-                    <p className='flex flex-row text-base text-slate-500 items-center'><span className='mr-2'><Boxes/></span>The Daily Grind</p>
-                    <p className='flex flex-row text-base text-slate-500 items-center'><span className='mr-2'><Laugh/></span>PM, MERN, Productivity</p>
 
-
+                <motion.div variants={itemVariants} className='flex flex-col gap-y-2 justify-between mx-4 my-6'>
+                    <p className='flex items-center text-base text-slate-500 dark:text-slate-400'>
+                        <span className='mr-2 text-sm'><BriefcaseBusiness /></span>Founder - The Daily Grind
+                    </p>
+                    <p className='flex items-center text-base text-slate-500 dark:text-slate-400'>
+                        <span className='mr-2'><Boxes /></span>MERN / NextJS / Java / Php
+                    </p>
+                    <p className='flex items-center text-base text-slate-500 dark:text-slate-400'>
+                        <span className='mr-2'><Laugh /></span>Aspiring Product/ Project Manager
+                    </p>
                 </motion.div>
-                <motion.div variants={itemVariants} className='mt-4'>
-                    <p className='text-base text-slate-500 text-left mr-10 pb-1'>
-                        Hi, I am Kaviru H, a IS Undergraduate who loves building cool things with code. In addition to coding, I also work on my startup kode.
+
+                <motion.div variants={itemVariants} className='mt-6 mx-4'>
+                    <p className='text-base text-slate-500 dark:text-slate-400'>
+                        Hello there! I am a second-year Information Systems undergraduate at the University of Colombo School of Computing (UCSC). I am passionate about project management and am currently working on learning theories related to the field of project/ product management. My background includes UI/UX, front-end development with React (NextJS), and back-end development using NodeJS, PHP, and Java. Over the past year, I&apos;ve also worked on ML projects involving CNNs, LLMs, and RAG.
                     </p>
                 </motion.div>
 
