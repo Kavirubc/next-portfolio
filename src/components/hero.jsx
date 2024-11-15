@@ -35,7 +35,7 @@ function Hero() {
                 </motion.div>
 
                 <motion.div variants={itemVariants} className='flex md:flex-col'>
-                    <p className='text-base text-slate-500 dark:text-slate-400'>Violinist | BSc. in IS UCSC | Vice Chair of IEEE CS Chapter UCSC</p>
+                    <p className='text-base text-slate-500 dark:text-slate-400'>BSc. in IS UCSC | Founder @ Daily Grind |Vice-Chair of IEEE CS Chapter UCSC | Violinist</p>
                 </motion.div>
 
             </motion.div>
@@ -52,7 +52,7 @@ function Hero() {
 
                 <motion.div variants={itemVariants} className='flex flex-col gap-y-2 justify-between mx-4 my-6'>
                     <p className='flex items-center text-base text-slate-500 dark:text-slate-400'>
-                        <span className='mr-2 text-sm'><BriefcaseBusiness /></span>Founder - The Daily Grind
+                        <span className='mr-2 text-sm'><BriefcaseBusiness /></span>Conversation Design & Content Strategy @ Convogrid.ai 
                     </p>
                     <p className='flex items-center text-base text-slate-500 dark:text-slate-400'>
                         <span className='mr-2'><Boxes /></span>MERN / NextJS / Java / Php
