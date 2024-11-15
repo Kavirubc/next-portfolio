@@ -165,7 +165,7 @@ function Index() {
                             </div>
                             {submitStatus === 'success' && (
                                 <p className="text-green-600 dark:text-green-400 text-sm text-center">
-                                    Thank you for your submission! We'll be in touch soon.
+                                    Thank you for your submission. We will be in touch soon.
                                 </p>
                             )}
                             {submitStatus === 'error' && (
